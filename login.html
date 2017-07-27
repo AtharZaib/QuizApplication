@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quiz App</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="show" id="index">
+
+            </br>
+            </br>
+            <input id="name1" type="text" placeholder="Name" /> </br>
+            </br>
+            <input id="pw" type="password" placeholder="Password" /> </br>
+            </br>
+            <input class="btn btn-primary btn-lg" type="submit" value="Get Account" onClick="store()" />
+
+
+            <form id="login-form">
+                <input id="userName" type="text" placeholder="Enter Username" value="" /></br>
+                </br>
+                <input id="userPw" type="password" placeholder="Enter Password" value="" /></br>
+                </br>
+                <input class="btn btn-primary btn-lg" type="submit" value="Login" onClick="check()" />
+                <button onclick="redirect()"> Index page</button>
+            </form>
+            <div>
+            </div>
+
+            <script src="login.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

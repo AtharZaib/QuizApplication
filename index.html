@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quiz App</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+
+        </div>
+        <div class="show" id="index">
+            <div class="wrapper">
+
+                <h1>Good Luck for the Test</h1>
+                <h2>Passing marks = 60 </h2>
+                <br>
+                <button id="startquiz" onclick="startQuiz();" class="bt btn-primary btn-lg" style="width:300px">Click here to Start Quiz</button>
+                <br><br>
+
+            </div>
+        </div>
+
+        <div class="hide" id="quiz">
+            <h2 id="timer"></h2>
+            <br>
+            <h3 id="ques"></h3>
+            <br>
+            <ul>
+                <li><input type="radio" name="option" value="option1" class="answer" onclick="enable();">1<br><br></li>
+                <li><input type="radio" name="option" value="option2" class="answer" onclick="enable();">2<br><br></li>
+                <li><input type="radio" name="option" value="option3" class="answer" onclick="enable();">3<br><br></li>
+                <li><input type="radio" name="option" value="option4" class="answer" onclick="enable();">4<br><br></li>
+            </ul>
+            <br><br><br><br>
+            <button id="next" onclick="nextQuestion();" disabled="disabled" class="btn btn-primary btn-lg">Next</button>
+        </div>
+        <div class="hide" id="scoresheet">
+            <button class="bt btn-primary btn-lg" onclick="startQuiz();" id="btn">Again Quiz</button>
+        </div>
+    </div>
+    <div>
+        <h1>
+            <a href="https://www.facebook.com/NaVi.markeloff" target="_blank" style="font-size:55px; text-decoration:none; color:white;"> Athar Zaib </a>
+        </h1>
+    </div>
+    <script src="js/code.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
